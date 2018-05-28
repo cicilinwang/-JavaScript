@@ -27,3 +27,14 @@ onePlus = function(digits) {
 }
 
 onePlus([1, 2, 9, 9]);
+
+// 在这道算法中，我有过以下的疑问：
+// 1、如果最后一位数不是9，那最后一位如何会加上1呢？当时的做法是这样的
+// let lastone = digits[digits.length - 1]
+// lastone += 1;
+// for (let i = digits.length - 1; i >= 0; i--) {
+//   if (data[i] !== 10) {
+//     return digits;
+//   }
+// }
+// 这样做的结果是返回的还是原来的数组，根本没有加1，因为加1的效果是在lastone变量上，而不是在数组的最后一个元素
